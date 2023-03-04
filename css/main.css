@@ -1,0 +1,67 @@
+/* Paletas de colores
+#0000AA
+#00AA00
+#00AAAA
+*/
+#container {
+    width: 80%;
+    margin: auto;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #75d475 ;
+    width: 80%;
+    position:fixed;
+    z-index: 100;
+}
+a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+@font-face {
+    font-family:"Minecraft";    
+    src:"../fonts/minecraft_font.ttf" format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+.title {
+    padding-left:20px;
+    font-family: "Minecraft" ;
+    font-size: 50px;
+}  
+nav {
+    position: fixed;
+    top: 121px;
+    float:left;
+    margin: 0;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    background-color:#75d475 ;
+}
+#armor-nav{
+    display: none;
+    position: absolute;
+    top: 82%;
+    left: 105px;
+    
+}
+#armor-nav li {
+    float: none;
+    width: 118.5px;
+}
+#armor-nav li:hover > #armor-nav{
+    display:block
+}
+nav li:hover {
+    background-color: #75d4756d;
+}
