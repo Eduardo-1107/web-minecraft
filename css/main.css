@@ -6,21 +6,18 @@
 #container {
     width: 80%;
     margin: auto;
+    background-color: #ffffff46;
+    z-index: 100;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../media/img/backimg.jpg")
 }
 header {
     background-color: #75d475 ;
     width: 80%;
     position:fixed;
     z-index: 100;
-}
-a {
-    display:block;
-    text-decoration: none;
-    color: black;
-    padding: 20px;
 }
 @font-face {
     font-family:"Minecraft";    
@@ -32,7 +29,14 @@ a {
     padding-left:20px;
     font-family: "Minecraft" ;
     font-size: 50px;
+    text-align: center;
 }  
+a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    padding: 23.2px;
+}
 nav {
     position: fixed;
     top: 121px;
@@ -48,20 +52,9 @@ nav ul li{
     float: left;
     background-color:#75d475 ;
 }
-#armor-nav{
-    display: none;
-    position: absolute;
-    top: 82%;
-    left: 105px;
-    
-}
-#armor-nav li {
-    float: none;
-    width: 118.5px;
-}
-#armor-nav li:hover > #armor-nav{
-    display:block
-}
 nav li:hover {
     background-color: #75d4756d;
+}
+nav li:hover a{
+    color: #fff;
 }
