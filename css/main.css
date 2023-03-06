@@ -3,10 +3,11 @@
 #00AA00
 #00AAAA
 */
+
+/* General styles */
 #container {
     width: 80%;
     margin: auto;
-    background-color: #ffffff46;
     z-index: 100;
 }
 body {
@@ -14,12 +15,7 @@ body {
     background-image: url("../media/img/backimg.jpg");
     background-repeat:no-repeat ;
     background-size: 100%;
-}
-header {
-    background-color: #75d475 ;
-    width: 80%;
-    position:fixed;
-    z-index: 100;
+    margin: 0;
 }
 @font-face {
     font-family:"Minecraft";    
@@ -27,11 +23,22 @@ header {
     font-style: normal;
     font-weight: bold;
 }
+
+/*Header styles */
+header a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 80%;
+    height: auto;
+    position:fixed;
+}
 .logo {
     position: absolute;
-    top: 40px;
-    left: 200px;
-    width: 50px;
+    top: 35px;
+    left: 150px;
+    width: 60px;
     box-shadow: 2px 2px 5px;
     animation-name: logo;
     animation-duration:2s;
@@ -51,38 +58,70 @@ header {
 }
 
 .title {
+    background-color: #75d475 ;
     padding-left:20px;
+    margin: 0;
+    height: 120px;
     font-family: "Minecraft" ;
     font-size: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }  
-a {
+nav a {
     display:block;
     text-decoration: none;
     color: black;
     padding: 21.4px;
     transition: all 500ms;
+    text-align: center;
 }
 nav {
-    position: fixed;
-    top: 121px;
-    float:left;
     margin: 0;
+    width: 100%;
+    
 }
 nav ul{
+    margin: 0%;
     padding: 0;
     list-style: none;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
-nav ul li{
-    float: left;
-    background-color:#75d475 ;
+nav li {
+    background-color: #75d475 ;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 nav li:hover {
-    background-color: #75d4756d;
+    background-color: #75d4755c ;    
+}
+
+nav li:hover  + header{
+    background-color: none;
 }
 nav li:hover a{
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+/* Sections */
+#resumen {
+    
+    width: 80%;
+    position: relative;
+    top: 225px;
+    background-color: #fdfdfd
 }
 
+@media (max-width: 1280px) {
+    .title {
+        font-size: 25px;
+    }
+}
