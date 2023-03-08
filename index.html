@@ -8,6 +8,7 @@
     <meta http-equiv="cache-control" content="no-cache"/>
     <title>MinecraftWiki</title>
     <link rel="stylesheet" href="css/main.css">
+    
     <link rel="shortcut icon" href="media/img/logo.jpeg" type="image/x-icon">
 </head>
 <body>
@@ -48,17 +49,39 @@
         </aside>
         <footer id="whoareus">
             <form action="" method="post">
-                <legend>Encuesta de satisfacción y mejora</legend>
-                <table>
-                    <td>
+                <div class="form">
+                    <div class="form-width">
+                        <legend>Encuesta de satisfacción y mejora</legend>
                         <p><span>*Encuesta totalmente anónima*</span></p>
-                    </td>
-                </table>
-
-
-
-
-
+                        <p>Responde del 1 al 5 siendo el 1 la peor valoración y el 5 la mejor valoración</p>
+                        <table>
+                            <tr>
+                                <td><label for="gusto">¿Te ha gustado la página?</label></td>
+                                <td><input type="radio" name="gusto" id="1"></td>
+                                <td><input type="radio" name="gusto" id="2"></td>
+                                <td><input type="radio" name="gusto" id="3"checked="checked"></td>
+                                <td><input type="radio" name="gusto" id="4"></td>
+                                <td><input type="radio" name="gusto" id="5"></td>
+                            </tr> 
+                            <tr>
+                                <td><label for="gusto">¿Te ha sido útil?</label></td>
+                                <td><input type="radio" name="util" id="6"></td>
+                                <td><input type="radio" name="util" id="7"></td>
+                                <td><input type="radio" name="util" id="8" checked="checked"></td>
+                                <td><input type="radio" name="util" id="9"></td>
+                                <td><input type="radio" name="util" id="10"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mejoras">¿Algún comentario?</label></td>
+                                <td colspan="5"><input type="text" name="Comentarios" id="11" placeholder="Escribe aqui..." ></td>
+                            </tr>
+                            <tr>
+                                <input type="reset" value="Borrar">
+                                <input type="submit" value="Enviar">
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </form>
         </footer>
     </div>
