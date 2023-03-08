@@ -7,6 +7,7 @@
 /* General styles */
 #container {
     width: 80%;
+    height: 855px;
     margin: auto;
     z-index: 100;
 }
@@ -33,6 +34,7 @@ header {
     width: 80%;
     height: auto;
     position:fixed;
+    z-index: 100;
 }
 .logo {
     position: absolute;
@@ -89,8 +91,7 @@ nav ul{
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;    
 }
 nav li {
     background-color: #75d475 ;
@@ -101,7 +102,7 @@ nav li {
     
 }
 nav li:hover {
-    background-color: #75d4755c ;    
+    background-color: #75d47581 ;    
 }
 
 nav li:hover  + header{
@@ -112,14 +113,30 @@ nav li:hover a{
     transform: scale(1.2);
 }
 /* Sections */
+h2 {
+    font-family: Rubik;
+}
 #resumen {
-    
-    width: 80%;
+    width: 40%;
     position: relative;
     top: 225px;
-    background-color: #fdfdfd
+    background-image: url("../media/img/bloquegris.jpg");
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 10px 10px 5px;
+    border-style: solid ;
+    border-width: 10px;
+    border-image: url("../media/img/bordetierra.png") 20% round ;
+    
 }
-
+footer {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    bottom: -295px;
+    left: 0;
+    height: 300px;    
+}
 @media (max-width: 1280px) {
     .title {
         font-size: 25px;
