@@ -1,0 +1,167 @@
+/* Paletas de colores
+#0000AA
+#00AA00
+#00AAAA
+*/
+
+/* General styles */
+#container {
+    width: 80%;
+    margin: auto;
+    z-index: 100;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../media/img/Redstone_Mines.jpg");
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    margin: 0;
+}
+#container_2 {
+    background-color: coral;
+}
+
+@font-face {
+    font-family:"Minecraft";    
+    src:"../fonts/minecraft_font.ttf" format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*Header styles */
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 80%;
+    height: auto;
+    position:fixed;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    width: 60px;
+    box-shadow: 2px 2px 5px;
+    animation-name: logo;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.logo:hover {
+    animation-play-state: running;
+}@keyframes logo {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.title {
+    background-color: #521615 ;
+    padding-left:20px;
+    margin: 0;
+    height: 120px;
+    font-family: "Minecraft" ;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+nav a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    padding: 21.4px;
+    transition: all 500ms;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul{
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    background-color: #521615 ;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: rgb(16, 186, 216) ;    
+}
+
+nav li:hover  + header{
+    background-color: none;
+}
+
+nav li:hover a{
+    color: #fff;
+    transform: scale(1.2);
+}
+/* Sections */
+#resumen {
+    border-radius: 25px;
+    z-index: -1;
+    color: white;
+    opacity: 0.9;
+    padding: 20px;
+    width: 60%;
+    height: 500px;
+    position: relative;
+    top: 125px;
+    background-color: #5a5757
+}
+
+#anotacion_1{
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+    z-index: -1;
+    color: white;
+    opacity: 0.9;
+    padding: 20px;
+    width: 380px;
+    height: 200px;
+    position: relative;
+    top: -415px;
+    left: 1042px;
+    background-color: #5a5757
+}
+
+#image{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 350px;
+    left: 1050px;
+}
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 25px;
+    }
+}
