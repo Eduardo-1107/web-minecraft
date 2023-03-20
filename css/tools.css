@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../media/img/Redstone_Mines.jpg");
+    background-image: url("../media/img/Minecraft-fomdo-1.jpg");
     background-repeat:no-repeat ;
     background-size: 100%;
     margin: 0;
@@ -46,7 +46,6 @@ header {
     top: 35px;
     left: 150px;
     width: 60px;
-    box-shadow: 2px 2px 5px;
     animation-name: logo;
     animation-duration:2s;
     animation-timing-function: linear;
@@ -66,7 +65,7 @@ header {
 }
 
 .title {
-    background-color: #521615 ;
+    background-color: #00adb9 ;
     padding-left:20px;
     margin: 0;
     height: 120px;
@@ -102,7 +101,7 @@ nav ul{
 }
 
 nav li {
-    background-color: #521615 ;
+    background-color: #00adb9 ;
     height: 80px;
     width: 200px;
     display: flex;
@@ -111,7 +110,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: rgb(16, 186, 216) ;    
+    background-color: rgba(16, 203, 216, 0.459) ;    
 }
 
 nav li:hover  + header{
@@ -129,35 +128,37 @@ nav li:hover a{
     color: white;
     opacity: 0.9;
     padding: 20px;
-    width: 60%;
+    width: 32%;
     height: 500px;
     position: relative;
-    top: 125px;
-    background-color: #5a5757
+    top: -200px;
+    left: 0px;
+    background-color: #00adb9a6;
 }
 
-#anotacion_1{
+#herramientas{
+    text-align: center;
     display: inline-block;
     position: relative;
     border-radius: 25px;
     z-index: -1;
     color: white;
     opacity: 0.9;
-    padding: 20px;
-    width: 380px;
-    height: 200px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
     position: relative;
-    top: -415px;
-    left: 1042px;
-    background-color: #5a5757
+    top: -740px;
+    left: 660px;
+    background-color: #00adb9a6;
 }
 
 #image{
-    width: 400px;
+    width: 430px;
     height: auto;
     position: relative;
-    top: 350px;
-    left: 1050px;
+    top: 320px;
+    left: 700px;
 }
 
 @media (max-width: 1280px) {
