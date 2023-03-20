@@ -144,8 +144,41 @@ footer {
     color: #fff   
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
     .title {
-        font-size: 25px;
+        font-size: 30px;
+    }
+    .logo {
+        display: none;
+    }
+    body {
+        background-image: url(../media/img/fondo2.png);
+        background-size: 150%;
+    }
+    footer {
+        display: none;
+    }
+    #resumen {
+        top: 700px;
+        bottom: 33%;
+        width: auto;
+        font-size: small;
+    }
+    #creeper {
+        top: 10px;
+        left: 200px;
+        width: 100px;
+        z-index: 1000;
+
+    }
+    #container {
+        height: auto;
+    }
+    nav ul {
+        overflow: visible;
+        flex-wrap: wrap;
+    }
+    nav li {
+        width: 50%;
     }
 }
